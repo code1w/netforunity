@@ -1,0 +1,5 @@
+F:\SmartFox2X\bin\Debug\SmartFox2X.dll
+F:\SmartFox2X\bin\Debug\SmartFox2X.pdb
+F:\SmartFox2X\obj\Debug\ResolveAssemblyReference.cache
+F:\SmartFox2X\obj\Debug\SmartFox2X.dll
+F:\SmartFox2X\obj\Debug\SmartFox2X.pdb

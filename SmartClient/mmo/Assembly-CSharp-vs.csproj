@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D6022986-899C-A9DE-2F02-35ACDE9A0EDC}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\Adler32.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\Deflate.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\InfBlocks.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\InfCodes.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\InfTree.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\Inflate.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\StaticTree.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\SupportClass.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\Tree.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\ZInputStream.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\ZOutputStream.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\ZStream.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\ZStreamException.cs" />
+     <Compile Include="Assets\KaiGeX\ComponentAce.Compression.Libs.zlib\zlibConst.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm.BBox\BBClient.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm.BBox\BBEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\BaseController.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\BitSwarmClient.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\BitSwarmEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\ConnectionModes.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\IController.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\IMessage.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\IUDPManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\IoHandler.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\Message.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\PacketReadState.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\PacketReadTransition.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\PendingPacket.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Bitswarm\UDPManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Controllers\ExtensionController.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Controllers\RequestDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Controllers\SystemController.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Controllers\SystemProtoBufController.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\ConnectionDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\ISocketLayer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\OnDataDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\OnErrorDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\TCPSocketLayer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core.Sockets\UDPSocketLayer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\BaseEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\EventDispatcher.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\EventListenerDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\IDispatchable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\PacketHeader.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\ProtoBufPackageHead.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\SFSBuddyEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\SFSEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\SFSIOHandler.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\SFSProtocolCodec.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\ThreadManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Core\WriteBinaryDataDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\ISFSArray.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\ISFSObject.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\SFSArray.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\SFSArrayEnumerator.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\SFSDataType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\SFSDataWrapper.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\SFSObject.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Data\Vec3D.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Invitation\Invitation.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Invitation\InvitationReply.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Invitation\SFSInvitation.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\IBuddyManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\IRoomManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\IUserManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\SFSBuddyManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\SFSGlobalUserManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\SFSRoomManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Managers\SFSUserManager.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\BoolMatch.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\IMatcher.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\LogicOperator.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\MatchExpression.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\NumberMatch.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\RoomProperties.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\StringMatch.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Match\UserProperties.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\BuddyVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\IMMOItemVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\MMOItemVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\ReservedBuddyVariables.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\ReservedRoomVariables.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\RoomVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\SFSBuddyVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\SFSRoomVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\SFSUserVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\UserVariable.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities.Variables\VariableType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\Buddy.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\IMMOItem.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\MMOItem.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\MMORoom.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\Room.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\SFSBuddy.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\SFSConstants.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\SFSRoom.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\SFSUser.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\User.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Entities\UserPrivileges.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Exceptions\SFSCodecError.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Exceptions\SFSError.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Exceptions\SFSValidationError.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.FSM\FSMState.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.FSM\FiniteStateMachine.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Http\HttpResponseDelegate.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Http\SFSWebClient.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Logging\LogLevel.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Logging\Logger.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Logging\LoggerEvent.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protobuf.Serialization\MessageDispatch.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protobuf.Serialization\ProtoBufMessageSerializer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\Connection.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\booth.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\common.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\fight.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\forwardmsg.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\friend.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\login.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\mail.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\map.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\objectsys.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Protobuf\servercommon.proto.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Serialization\DefaultObjectDumpFormatter.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Serialization\DefaultSFSDataSerializer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Serialization\ISFSDataSerializer.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol.Serialization\SerializableSFSType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Protocol\IProtocolCodec.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\AddBuddyRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\BlockBuddyRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\BuddyMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\GoOnlineRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\InitBuddyListRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\RemoveBuddyRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Buddylist\SetBuddyVariablesRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Game\CreateSFSGameRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Game\InvitationReplyRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Game\InviteUsersRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Game\QuickJoinGameRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.Game\SFSGameSettings.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.MMO\MMORoomSettings.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.MMO\MapLimits.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.MMO\SetMMOItemVariables.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests.MMO\SetUserPositionRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\AdminMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\BanMode.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\BanUserRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\BaseRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ChangeRoomCapacityRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ChangeRoomNameRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ChangeRoomPasswordStateRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\CreateRoomRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ExtensionRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\FindRoomsRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\FindUsersRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\GenericMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\GenericMessageType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\HandshakeRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\IRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\JoinRoomRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\KickUserRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\LeaveRoomRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\LoginRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\LogoutRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ManualDisconnectionRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\MessageRecipientMode.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\MessageRecipientType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ModeratorMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\ObjectMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\PingPongRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\PlayerToSpectatorRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\PrivateMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\PublicMessageRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\RequestType.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\RoomEvents.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\RoomExtension.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\RoomPermissions.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\RoomSettings.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\SetRoomVariablesRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\SetUserVariablesRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\SpectatorToPlayerRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\SubscribeRoomGroupRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Requests\UnsubscribeRoomGroupRequest.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\BuddyOnlineState.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\ByteArray.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\ClientDisconnectionReason.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\ConfigData.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\ConfigLoader.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\LagMonitor.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\PasswordUtil.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\SFSErrorCodes.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\XMLNode.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\XMLNodeList.cs" />
+     <Compile Include="Assets\KaiGeX\KGX.Util\XMLParser.cs" />
+     <Compile Include="Assets\KaiGeX\KGX\KaiGeNet.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorOnSelection.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ShaderQuality.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\TypewriterEffect.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Scripts\ConnectionGUI.cs" />
+     <Compile Include="Assets\Scripts\GameGUI.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\SimpleRemoteInterpolation.cs" />
+     <Compile Include="Assets\Scripts\SmartFoxConnection.cs" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.0.8.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (SoftClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\skybox info.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Other\English.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\NGUI\Examples\Other\French.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+ <Reference Include="protobuf-net">
+ <HintPath>Assets\Plugins\protobuf-net.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

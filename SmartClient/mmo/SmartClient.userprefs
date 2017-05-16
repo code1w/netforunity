@@ -1,0 +1,30 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SmartFox2X\Sfs2X.Core\SFSIOHandler.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ConnectionGUI.cs" Line="152" Column="15" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Core\SFSIOHandler.cs" Line="415" Column="60" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Bitswarm\BitSwarmClient.cs" Line="1" Column="1" />
+      <File FileName="Assets\SmartFox2X\Sfs2X\SmartFox.cs" Line="1" Column="1" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Util\ByteArray.cs" Line="193" Column="46" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Core\EventDispatcher.cs" Line="1" Column="1" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Core\ProtoBufPackageHead.cs" Line="74" Column="57" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Core\SFSProtocolCodec.cs" Line="56" Column="53" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Entities.Data\ISFSObject.cs" Line="15" Column="18" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Entities.Data\SFSArray.cs" Line="182" Column="63" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Protocol.Serialization\ISFSDataSerializer.cs" Line="9" Column="25" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Protocol.Serialization\DefaultSFSDataSerializer.cs" Line="62" Column="20" />
+      <File FileName="Assets\SmartFox2X\Sfs2X.Protocol.Serialization\DefaultObjectDumpFormatter.cs" Line="7" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\zxb\mycode\SmartClient\Assets\SmartFox2X\Sfs2X\SmartFox.cs" line="710" />
+      <Breakpoint file="E:\zxb\mycode\SmartClient\Assets\SmartFox2X\Sfs2X.Core\ProtoBufPackageHead.cs" line="62" />
+      <Breakpoint file="E:\zxb\mycode\SmartClient\Assets\SmartFox2X\Sfs2X.Core\ProtoBufPackageHead.cs" line="67" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\Scripts\ConnectionGUI.cs" line="246" offsetX="404" offsetY="3978" expression="msg" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

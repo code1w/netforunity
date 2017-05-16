@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{916BD77C-4092-4D56-856F-F4FB3B561740}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SmartFox2X</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentAce.Compression.Libs.zlib\Adler32.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\Deflate.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\InfBlocks.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\InfCodes.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\Inflate.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\InfTree.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\StaticTree.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\SupportClass.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\Tree.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\ZInputStream.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\zlibConst.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\ZOutputStream.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\ZStream.cs" />
+    <Compile Include="ComponentAce.Compression.Libs.zlib\ZStreamException.cs" />
+    <Compile Include="Sfs2X.Bitswarm.BBox\BBClient.cs" />
+    <Compile Include="Sfs2X.Bitswarm.BBox\BBEvent.cs" />
+    <Compile Include="Sfs2X.Bitswarm\BaseController.cs" />
+    <Compile Include="Sfs2X.Bitswarm\BitSwarmClient.cs" />
+    <Compile Include="Sfs2X.Bitswarm\BitSwarmEvent.cs" />
+    <Compile Include="Sfs2X.Bitswarm\ConnectionModes.cs" />
+    <Compile Include="Sfs2X.Bitswarm\IController.cs" />
+    <Compile Include="Sfs2X.Bitswarm\IMessage.cs" />
+    <Compile Include="Sfs2X.Bitswarm\IoHandler.cs" />
+    <Compile Include="Sfs2X.Bitswarm\IUDPManager.cs" />
+    <Compile Include="Sfs2X.Bitswarm\Message.cs" />
+    <Compile Include="Sfs2X.Bitswarm\PacketReadState.cs" />
+    <Compile Include="Sfs2X.Bitswarm\PacketReadTransition.cs" />
+    <Compile Include="Sfs2X.Bitswarm\PendingPacket.cs" />
+    <Compile Include="Sfs2X.Bitswarm\UDPManager.cs" />
+    <Compile Include="Sfs2X.Controllers\ExtensionController.cs" />
+    <Compile Include="Sfs2X.Controllers\RequestDelegate.cs" />
+    <Compile Include="Sfs2X.Controllers\SystemController.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\ConnectionDelegate.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\ISocketLayer.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\OnDataDelegate.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\OnErrorDelegate.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\TCPSocketLayer.cs" />
+    <Compile Include="Sfs2X.Core.Sockets\UDPSocketLayer.cs" />
+    <Compile Include="Sfs2X.Core\BaseEvent.cs" />
+    <Compile Include="Sfs2X.Core\EventDispatcher.cs" />
+    <Compile Include="Sfs2X.Core\EventListenerDelegate.cs" />
+    <Compile Include="Sfs2X.Core\IDispatchable.cs" />
+    <Compile Include="Sfs2X.Core\PacketHeader.cs" />
+    <Compile Include="Sfs2X.Core\SFSBuddyEvent.cs" />
+    <Compile Include="Sfs2X.Core\SFSEvent.cs" />
+    <Compile Include="Sfs2X.Core\SFSIOHandler.cs" />
+    <Compile Include="Sfs2X.Core\SFSProtocolCodec.cs" />
+    <Compile Include="Sfs2X.Core\ThreadManager.cs" />
+    <Compile Include="Sfs2X.Core\WriteBinaryDataDelegate.cs" />
+    <Compile Include="Sfs2X.Entities.Data\ISFSArray.cs" />
+    <Compile Include="Sfs2X.Entities.Data\ISFSObject.cs" />
+    <Compile Include="Sfs2X.Entities.Data\SFSArray.cs" />
+    <Compile Include="Sfs2X.Entities.Data\SFSArrayEnumerator.cs" />
+    <Compile Include="Sfs2X.Entities.Data\SFSDataType.cs" />
+    <Compile Include="Sfs2X.Entities.Data\SFSDataWrapper.cs" />
+    <Compile Include="Sfs2X.Entities.Data\SFSObject.cs" />
+    <Compile Include="Sfs2X.Entities.Data\Vec3D.cs" />
+    <Compile Include="Sfs2X.Entities.Invitation\Invitation.cs" />
+    <Compile Include="Sfs2X.Entities.Invitation\InvitationReply.cs" />
+    <Compile Include="Sfs2X.Entities.Invitation\SFSInvitation.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\IBuddyManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\IRoomManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\IUserManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\SFSBuddyManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\SFSGlobalUserManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\SFSRoomManager.cs" />
+    <Compile Include="Sfs2X.Entities.Managers\SFSUserManager.cs" />
+    <Compile Include="Sfs2X.Entities.Match\BoolMatch.cs" />
+    <Compile Include="Sfs2X.Entities.Match\IMatcher.cs" />
+    <Compile Include="Sfs2X.Entities.Match\LogicOperator.cs" />
+    <Compile Include="Sfs2X.Entities.Match\MatchExpression.cs" />
+    <Compile Include="Sfs2X.Entities.Match\NumberMatch.cs" />
+    <Compile Include="Sfs2X.Entities.Match\RoomProperties.cs" />
+    <Compile Include="Sfs2X.Entities.Match\StringMatch.cs" />
+    <Compile Include="Sfs2X.Entities.Match\UserProperties.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\BuddyVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\IMMOItemVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\MMOItemVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\ReservedBuddyVariables.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\ReservedRoomVariables.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\RoomVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\SFSBuddyVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\SFSRoomVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\SFSUserVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\UserVariable.cs" />
+    <Compile Include="Sfs2X.Entities.Variables\VariableType.cs" />
+    <Compile Include="Sfs2X.Entities\Buddy.cs" />
+    <Compile Include="Sfs2X.Entities\IMMOItem.cs" />
+    <Compile Include="Sfs2X.Entities\MMOItem.cs" />
+    <Compile Include="Sfs2X.Entities\MMORoom.cs" />
+    <Compile Include="Sfs2X.Entities\Room.cs" />
+    <Compile Include="Sfs2X.Entities\SFSBuddy.cs" />
+    <Compile Include="Sfs2X.Entities\SFSConstants.cs" />
+    <Compile Include="Sfs2X.Entities\SFSRoom.cs" />
+    <Compile Include="Sfs2X.Entities\SFSUser.cs" />
+    <Compile Include="Sfs2X.Entities\User.cs" />
+    <Compile Include="Sfs2X.Entities\UserPrivileges.cs" />
+    <Compile Include="Sfs2X.Exceptions\SFSCodecError.cs" />
+    <Compile Include="Sfs2X.Exceptions\SFSError.cs" />
+    <Compile Include="Sfs2X.Exceptions\SFSValidationError.cs" />
+    <Compile Include="Sfs2X.FSM\FiniteStateMachine.cs" />
+    <Compile Include="Sfs2X.FSM\FSMState.cs" />
+    <Compile Include="Sfs2X.Http\HttpResponseDelegate.cs" />
+    <Compile Include="Sfs2X.Http\SFSWebClient.cs" />
+    <Compile Include="Sfs2X.Logging\Logger.cs" />
+    <Compile Include="Sfs2X.Logging\LoggerEvent.cs" />
+    <Compile Include="Sfs2X.Logging\LogLevel.cs" />
+    <Compile Include="Sfs2X.Protocol.Serialization\DefaultObjectDumpFormatter.cs" />
+    <Compile Include="Sfs2X.Protocol.Serialization\DefaultSFSDataSerializer.cs" />
+    <Compile Include="Sfs2X.Protocol.Serialization\ISFSDataSerializer.cs" />
+    <Compile Include="Sfs2X.Protocol.Serialization\SerializableSFSType.cs" />
+    <Compile Include="Sfs2X.Protocol\IProtocolCodec.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\AddBuddyRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\BlockBuddyRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\BuddyMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\GoOnlineRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\InitBuddyListRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\RemoveBuddyRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Buddylist\SetBuddyVariablesRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Game\CreateSFSGameRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Game\InvitationReplyRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Game\InviteUsersRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Game\QuickJoinGameRequest.cs" />
+    <Compile Include="Sfs2X.Requests.Game\SFSGameSettings.cs" />
+    <Compile Include="Sfs2X.Requests.MMO\MapLimits.cs" />
+    <Compile Include="Sfs2X.Requests.MMO\MMORoomSettings.cs" />
+    <Compile Include="Sfs2X.Requests.MMO\SetMMOItemVariables.cs" />
+    <Compile Include="Sfs2X.Requests.MMO\SetUserPositionRequest.cs" />
+    <Compile Include="Sfs2X.Requests\AdminMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\BanMode.cs" />
+    <Compile Include="Sfs2X.Requests\BanUserRequest.cs" />
+    <Compile Include="Sfs2X.Requests\BaseRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ChangeRoomCapacityRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ChangeRoomNameRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ChangeRoomPasswordStateRequest.cs" />
+    <Compile Include="Sfs2X.Requests\CreateRoomRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ExtensionRequest.cs" />
+    <Compile Include="Sfs2X.Requests\FindRoomsRequest.cs" />
+    <Compile Include="Sfs2X.Requests\FindUsersRequest.cs" />
+    <Compile Include="Sfs2X.Requests\GenericMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\GenericMessageType.cs" />
+    <Compile Include="Sfs2X.Requests\HandshakeRequest.cs" />
+    <Compile Include="Sfs2X.Requests\IRequest.cs" />
+    <Compile Include="Sfs2X.Requests\JoinRoomRequest.cs" />
+    <Compile Include="Sfs2X.Requests\KickUserRequest.cs" />
+    <Compile Include="Sfs2X.Requests\LeaveRoomRequest.cs" />
+    <Compile Include="Sfs2X.Requests\LoginRequest.cs" />
+    <Compile Include="Sfs2X.Requests\LogoutRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ManualDisconnectionRequest.cs" />
+    <Compile Include="Sfs2X.Requests\MessageRecipientMode.cs" />
+    <Compile Include="Sfs2X.Requests\MessageRecipientType.cs" />
+    <Compile Include="Sfs2X.Requests\ModeratorMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\ObjectMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\PingPongRequest.cs" />
+    <Compile Include="Sfs2X.Requests\PlayerToSpectatorRequest.cs" />
+    <Compile Include="Sfs2X.Requests\PrivateMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\PublicMessageRequest.cs" />
+    <Compile Include="Sfs2X.Requests\RequestType.cs" />
+    <Compile Include="Sfs2X.Requests\RoomEvents.cs" />
+    <Compile Include="Sfs2X.Requests\RoomExtension.cs" />
+    <Compile Include="Sfs2X.Requests\RoomPermissions.cs" />
+    <Compile Include="Sfs2X.Requests\RoomSettings.cs" />
+    <Compile Include="Sfs2X.Requests\SetRoomVariablesRequest.cs" />
+    <Compile Include="Sfs2X.Requests\SetUserVariablesRequest.cs" />
+    <Compile Include="Sfs2X.Requests\SpectatorToPlayerRequest.cs" />
+    <Compile Include="Sfs2X.Requests\SubscribeRoomGroupRequest.cs" />
+    <Compile Include="Sfs2X.Requests\UnsubscribeRoomGroupRequest.cs" />
+    <Compile Include="Sfs2X.Util\BuddyOnlineState.cs" />
+    <Compile Include="Sfs2X.Util\ByteArray.cs" />
+    <Compile Include="Sfs2X.Util\ClientDisconnectionReason.cs" />
+    <Compile Include="Sfs2X.Util\ConfigData.cs" />
+    <Compile Include="Sfs2X.Util\ConfigLoader.cs" />
+    <Compile Include="Sfs2X.Util\LagMonitor.cs" />
+    <Compile Include="Sfs2X.Util\PasswordUtil.cs" />
+    <Compile Include="Sfs2X.Util\SFSErrorCodes.cs" />
+    <Compile Include="Sfs2X.Util\XMLNode.cs" />
+    <Compile Include="Sfs2X.Util\XMLNodeList.cs" />
+    <Compile Include="Sfs2X.Util\XMLParser.cs" />
+    <Compile Include="Sfs2X\SmartFox.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
